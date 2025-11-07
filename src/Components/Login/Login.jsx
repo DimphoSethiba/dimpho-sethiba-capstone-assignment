@@ -1,5 +1,6 @@
 import React  from 'react';
-import './Login.css';
+import '../../Styles/Form.css';
+import { Link } from "react-router-dom";
 
 import email_icon from '../Assets/email.png';
 import password_icon from '../Assets/password.png';
@@ -24,7 +25,7 @@ const Login = () => {
          </div>
          <div className="forgot-password">Lost Password? <span>Click Here!</span></div>
          <div className="submit-container">
-          <div className="submit">Sign Up</div>
+          <div className="submit"><Link to="/SignUp">Sign Up</Link></div>
           <div className="submit">Login</div>
          </div>
         </div>

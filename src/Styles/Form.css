@@ -72,8 +72,11 @@
 .forgot-password span {
     color: #4c00b4;
     cursor: pointer;
+    font-weight:500;
 }
-
+.forgot-password span a {
+    text-decoration: none;
+}
 .submit-container {
     display: flex;
     gap: 8px;
@@ -92,4 +95,8 @@
     font-size: 14px; 
     font-weight: 700;
     cursor: pointer;
+}
+.submit a {
+  text-decoration: none;
+  color: #fff;
 }

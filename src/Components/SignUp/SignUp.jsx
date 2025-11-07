@@ -1,12 +1,12 @@
 import React  from 'react';
-import './Login.css';
+import '../../Styles/Form.css';
 import { Link } from "react-router-dom";
 
 import user_icon from '../Assets/user.png';
 import email_icon from '../Assets/email.png';
 import password_icon from '../Assets/password.png';
 
-const Login = () => {
+const SignUp = () => {
     return (
       
         <div className="container">
@@ -32,14 +32,14 @@ const Login = () => {
             <input type="password" placeholder="Confirm Password" />
            </div>
          </div>
-         <div className="forgot-password">Lost Password? <span>Click Here!</span></div>
+         <div className="forgot-password">Already have an account? <span><Link to="/Login">Login</Link></span></div>
          <div className="submit-container">
           <div className="submit"><Link to="/SignUp">Sign Up</Link></div>
-          <div className="submit">Login</div>
-         </div>
+          
         </div>
+      </div>
       
     )
 }
 
-export default Login
+export default SignUp
