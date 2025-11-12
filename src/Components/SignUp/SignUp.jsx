@@ -10,44 +10,6 @@ import password_icon from '../Assets/password.png';
 const SignUp = () => {
     return (
       
- const [error, setError] = useState("");
-  const [success, setSuccess] = useState("");
-
-  
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-   
-    if (!formData.name || !formData.email || !formData.password || !formData.confirmPassword) {
-      setError("All fields are required");
-      setSuccess("");
-      return;
-    }
-
-    if (formData.password !== formData.confirmPassword) {
-      setError("Passwords do not match");
-      setSuccess("");
-      return;
-    }
-
-    
-    console.log("User registered:", formData);
-    setError("");
-    setSuccess("Account created successfully!");
-    setFormData({ name: "", email: "", password: "", confirmPassword: "" });
-
-    setTimeout(() => {
-      navigate("/Login");
-    }, 2000);
-  };
 
         <div className="container">
          <div className="header">
